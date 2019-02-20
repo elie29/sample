@@ -51,6 +51,7 @@
    },
    "scripts": {
       "check": [
+         "@clean",
          "@cs-check",
          "@test",
          "@phpstan"
@@ -59,6 +60,10 @@
       "cs-check": "phpcs",
       "cs-fix": "phpcbf",
       "test": "phpunit",
-      "test-coverage": "phpunit --coverage-clover clover.xml"
+      "test-coverage": "phpunit --coverage-clover clover.xml",
+      "clean": [
+         "rm -rf build/*",
+         "rm -f clover.xml"
+      ]
    }
 }
