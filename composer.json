@@ -1,0 +1,64 @@
+{
+   "name": "elie29/sample",
+   "description": "Sample description",
+   "type": "library",
+   "license": "MIT",
+   "minimum-stability": "stable",
+   "keywords": [
+      "expressive",
+      "zf",
+      "zendframework",
+      "php-di",
+      "di",
+      "container",
+      "psr-11"
+   ],
+   "authors": [
+      {
+         "name": "Elie NEHME",
+         "email": "elie29@gmail.com"
+      }
+   ],
+   "support": {
+      "issues": "https://github.com/elie29/sample/issues",
+      "source": "https://github.com/elie29/sample"
+   },
+   "require": {
+      "php": "^7.1"
+   },
+   "require-dev": {
+      "mockery/mockery": "^1.2",
+      "phpstan/phpstan": "^0.11.2",
+      "phpstan/phpstan-mockery": "^0.11.0",
+      "phpunit/phpunit": "^7.5",
+      "zendframework/zend-coding-standard": "^1.0"
+   },
+   "autoload": {
+      "psr-4": {
+         "Sample\\": "src"
+      }
+   },
+   "autoload-dev": {
+      "files": [
+         "vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest.php"
+      ],
+      "psr-4": {
+         "Sample\\": "tests"
+      }
+   },
+   "config": {
+      "sort-packages": true
+   },
+   "scripts": {
+      "check": [
+         "@cs-check",
+         "@test",
+         "@phpstan"
+      ],
+      "phpstan": "phpstan analyse src tests --error-format=checkstyle > build/phpstan.xml || true",
+      "cs-check": "phpcs",
+      "cs-fix": "phpcbf",
+      "test": "phpunit",
+      "test-coverage": "phpunit --coverage-clover clover.xml"
+   }
+}
