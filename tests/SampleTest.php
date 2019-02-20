@@ -11,6 +11,9 @@ class SampleTest extends TestCase
 
     public function testSample(): void
     {
-        assertThat(new Sample(), anInstanceOf(Sample::class));
+        $sample = new Sample();
+
+        assertThat($sample, anInstanceOf(Sample::class));
+        assertThat((string) $sample, equalTo(Sample::class));
     }
 }
