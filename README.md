@@ -13,7 +13,7 @@ Sample PHP 7.1 starter
 - Zend Framework coding standard
 
 ## Composer commands
-   - `clean`: Delete generated files
+   - `clean`: Delete all generated files
    - `test`: Launch unit test
    - `test-coverage`: Launch unit test with clover.xml file generation
    - `cs-check` : code sniffer check

@@ -5,13 +5,8 @@
    "license": "MIT",
    "minimum-stability": "stable",
    "keywords": [
-      "expressive",
-      "zf",
-      "zendframework",
-      "php-di",
-      "di",
-      "container",
-      "psr-11"
+      "sample",
+      "php"
    ],
    "authors": [
       {
