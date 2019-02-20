@@ -7,8 +7,8 @@ namespace Sample;
 class Sample
 {
 
-  public function __toString(): string
-  {
-    return __CLASS__;
-  }
+    public function __toString(): string
+    {
+        return __CLASS__;
+    }
 }
